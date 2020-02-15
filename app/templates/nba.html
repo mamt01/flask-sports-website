@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
+<html lang=en>
+    <head>
 		<meta charset="utf-8" />
-		<title>Sports Mania</title>
+		<title>NHL Mania</title>
 		<meta name="description" content="" />
 		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
 
@@ -22,38 +22,12 @@
 
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="static/css/header-1.css" rel="stylesheet" type="text/css" />
-		<link href="static/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+        <link href="static/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+        <link href="static/css/sport_table.css" rel="stylesheet" type="text/css" id="color_scheme" />
+        
 	</head>
-
-	<!--
-		AVAILABLE BODY CLASSES:
-		
-		smoothscroll 			= create a browser smooth scroll
-		enable-animation		= enable WOW animations
-
-		bg-grey					= grey background
-		grain-grey				= grey grain background
-		grain-blue				= blue grain background
-		grain-green				= green grain background
-		grain-blue				= blue grain background
-		grain-orange			= orange grain background
-		grain-yellow			= yellow grain background
-		
-		boxed 					= boxed layout
-		pattern1 ... patern11	= pattern background
-		menu-vertical-hide		= hidden, open on click
-		
-		BACKGROUND IMAGE [together with .boxed class]
-		data-background="assets/images/_smarty/boxed_background/1.jpg"
-	-->
-	<body class="smoothscroll enable-animation">
-
-		<!-- SLIDE TOP -->
-		<!-- /SLIDE TOP -->
-
-
-		<!-- wrapper -->
-		<div id="wrapper">
+    <body class="smoothscroll enable-animation">
+        <div id="wrapper">
 
 			<!-- 
 				AVAILABLE HEADER CLASSES
@@ -193,113 +167,34 @@
 			<section class="page-header dark page-header-xs">
 				<div class="container">
 
-					<h1>The best place to get your sports results and predictions</h1>
+					<h1>NHL results</h1>
 
 				</div>
 			</section>
 			<!-- /PAGE HEADER -->
 
-			<!-- -->
+			<!-----------------------------------------------------TABLE FOR SCORE  --------------------------------------------------------------------------->
 			<section>
 				<div class="container">
-
-					<div id="portfolio" class="portfolio-gutter">
-
-						<ul class="nav nav-pills mix-filter mb-60">
-							<li data-filter="all" class="filter active"><a href="#">All</a></li>
-							<li data-filter="nhl" class="filter"><a href="#">NHL</a></li>
-							<li data-filter="nfl" class="filter"><a href="#">NFL</a></li>
-							<li data-filter="nba" class="filter"><a href="#">NBA</a></li>
-						</ul>
-
-						<div class="row mix-grid">
-
-							<div class="col-md-6 col-sm-6 mix nfl"><!-- item -->
-
-								<div class="item-box">
-									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="static/demo_files/images/mockups/1200x800/11-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-
-										<!-- carousel -->
-										<div class="owl-carousel buttons-autohide controlls-over m-0" data-plugin-options='{"type": "image"}'>
-											<div>
-												<img class="img-fluid" src="https://media.pri.org/s3fs-public/styles/original_image/public/images/2019/02/sony_michel.jpg?itok=QerLMjfH" width="600" height="399" alt="">
-											</div>
-										</div>
-										<!-- /carousel -->
-									</figure>
-								</div>
-							</div><!-- /item -->
-
-							<div class="col-md-6 col-sm-6 mix nhl"><!-- item -->
-
-								<div class="item-box">
-									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="static/demo_files/images/mockups/1200x800/19-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-										<img class="img-fluid" src="https://cdn.vox-cdn.com/thumbor/Xfe9-alIOkYEAx_AAXLUktRoH8A=/0x0:3858x2572/1820x1213/filters:focal(1339x1017:1955x1633):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65882140/1188066806.jpg.0.jpg" width="600" height="399" alt="">
-									</figure>
-								</div>
-							</div><!-- /item -->
-							<div class="col-md-6 col-sm-6 mix nba"><!-- item -->
-
-								<div class="item-box">
-									<figure>
-										<span class="item-hover">
-											<span class="overlay dark-5"></span>
-											<span class="inner">
-
-												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="static/demo_files/images/mockups/1200x800/19-min.jpg" data-plugin-options='{"type":"image"}'>
-													<span class="fa fa-plus fs-20"></span>
-												</a>
-
-												<!-- details -->
-												<a class="ico-rounded" href="portfolio-single-slider.html">
-													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-												</a>
-
-											</span>
-										</span>
-										<img class="img-fluid" src="https://imagesvc.timeincapp.com/v3/fan/image?url=http://hoopshabit.com/wp-content/uploads/getty-images/2016/04/1186983631.jpeg&c=sc&w=3200&h=2133" width="600" height="399" alt="">
-									</figure>
-								</div>
-							</div><!-- /item -->
-						</div>
-					</div>
+                    <table class="sports">
+                        <thead>
+                            <tr>
+                            <th>Games</th>
+                            <th>Score</th>
+                            <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
 				</div>
 			</section>
 			<!-- / -->
-
-
 			<!-- FOOTER -->
 			<footer id="footer">
 				<div class="container">
@@ -413,27 +308,6 @@
 			<!-- /FOOTER -->
 
 		</div>
-		<!-- /wrapper -->
+    </body>
 
-
-		<!-- SCROLL TO TOP -->
-		<a href="#" id="toTop"></a>
-
-
-		<!-- PRELOADER -->
-		<div id="preloader">
-			<div class="inner">
-				<span class="loader"></span>
-			</div>
-		</div><!-- /PRELOADER -->
-
-
-		<!-- JAVASCRIPT FILES -->
-		<script>var plugin_path = 'static/plugins/';</script>
-		<script src="static/plugins/jquery/jquery-3.3.1.min.js"></script>
-
-		<script src="static/js/scripts.js"></script>
-		
-		<!-- STYLESWITCHER - REMOVE -->
-	</body>
 </html>
